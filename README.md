@@ -14,6 +14,7 @@ Features
 - License: LGPL 3
 - Language: C#, .NET 4.5
 - IDE: Visual Studio 2012, MonoDevelop 5.9.6
+- Version: v1.3.0
 
 
 Documentation
