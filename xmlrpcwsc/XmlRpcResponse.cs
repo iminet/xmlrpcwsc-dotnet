@@ -1,6 +1,4 @@
 ////
-/// XmlRpcResponse.cs
-/// 
 /// Copyright (c) 2016 Saúl Piña <sauljabin@gmail.com>.
 /// 
 /// This file is part of xmlrpcwsc.
