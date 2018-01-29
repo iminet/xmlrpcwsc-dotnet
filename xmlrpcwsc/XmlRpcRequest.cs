@@ -88,32 +88,36 @@ namespace XmlRpc {
         /// Adds the parameter, if param is DateTime uses DateTime.UtcNow, for dateTime.iso8601 conversion
         /// </summary>
         /// <param name="param">Parameter</param>
-        public void AddParam(object param) {
+        public XmlRpcRequest AddParam(object param) {
             Params.Add(param);
+            return this;
         }
 
         /// <summary>
         /// Adds the parameters
         /// </summary>
         /// <param name="parameters">Parameters</param>
-        public void AddParams(params object[] list) {
+        public XmlRpcRequest AddParams(params object[] list) {
             Params.AddRange(list);
+            return this;
         }
 
         /// <summary>
         /// Adds the parameter array
         /// </summary>
         /// <param name="list">List</param>
-        public void AddParamArray(params object[] list) {
+        public XmlRpcRequest AddParamArray(params object[] list) {
             AddParam(XmlRpcParameter.AsArray(list));
+            return this;
         }
 
         /// <summary>
         /// Adds the parameter struct
         /// </summary>
         /// <param name="list">List</param>
-        public void AddParamStruct(params KeyValuePair<string,object>[] list) {
+        public XmlRpcRequest AddParamStruct(params KeyValuePair<string,object>[] list) {
             AddParam(XmlRpcParameter.AsStruct(list));
+            return this;
         }
 
         /// <summary>
