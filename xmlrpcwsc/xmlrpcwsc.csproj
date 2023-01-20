@@ -11,6 +11,7 @@
     <Product>xmlrpcwsc</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.4.0</Version>
+	<Deterministic>false</Deterministic>
   </PropertyGroup>
 
   <PropertyGroup>
